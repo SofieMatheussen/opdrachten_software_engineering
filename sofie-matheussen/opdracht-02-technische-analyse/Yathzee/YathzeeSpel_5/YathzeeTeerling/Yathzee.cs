@@ -31,6 +31,9 @@ namespace YathzeeTeerling
       ScoreBoardView scorebordView = scorebord.getView();
       scorebordView.Location = new Point(-10, 170);
       Controls.Add(scorebordView);
+      
       }
-  }
+
+        
+}
 }

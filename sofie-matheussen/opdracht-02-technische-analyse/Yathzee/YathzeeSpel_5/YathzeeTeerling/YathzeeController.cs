@@ -20,7 +20,8 @@ namespace YathzeeTeerling
 
      // Maak een nieuwe instantie van het model aan
      _model = new YahtzeeModel();
-    }
+     
+        }
 
    
     public YahtzeeModel getModel()
@@ -81,7 +82,9 @@ namespace YathzeeTeerling
         // update view teerlingen
         teerling.getView().updateUI();
       }
-            //changeScore();
+       // changeScore();
     }
+
+
   }
 }
