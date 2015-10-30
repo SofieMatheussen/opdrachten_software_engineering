@@ -19,14 +19,17 @@ namespace YathzeeTeerling
 
     private void Yathzee_Load(object sender, EventArgs e)
     {
-      //toevoegen scorebord
-
       //toevoegen yathzee
       YahtzeeController yahtzee = new YahtzeeController();
       YahtzeeView yahtzeeView = yahtzee.getView();
       yahtzeeView.Location = new Point(0, 0);
       yahtzee.initialize();
       Controls.Add(yahtzeeView);
-    }
+
+      //toevoegen scorebord
+      ScoreBoardController scorebord = new ScoreBoardController();
+      ScoreBoardView scorebordView = scorebord.getView();
+      scorebordView.Location = new Point(0, 0);
+        }
   }
 }

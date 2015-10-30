@@ -44,8 +44,8 @@ namespace YathzeeTeerling
                 huidigeTeerling.updateViewTeerling();
             }*/
             
-            scoreLabel.Location = new Point(20, teerlingen[0].Width  -30);
-            highScoreLabel.Location = new Point(20, teerlingen[0].Height + scoreLabel.Height -30);
+            scoreLabel.Location = new Point(20, teerlingen[0].Height  +5);
+            highScoreLabel.Location = new Point(20, teerlingen[0].Height + scoreLabel.Height +5);
            
             
         }
