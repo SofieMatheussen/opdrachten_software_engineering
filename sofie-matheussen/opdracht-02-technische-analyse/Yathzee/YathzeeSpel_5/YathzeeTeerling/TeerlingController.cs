@@ -16,8 +16,8 @@ namespace YathzeeTeerling
     private YahtzeeController _controllerYahtzee;
     public TeerlingModel _model;
 
-        static int seeder = new Random().Next(); //nodig omdat anders random getal altijd hetzelfde is
-        Random random = new Random(++seeder); //random getal genereren
+    static int seeder = new Random().Next(); //nodig omdat anders random getal altijd hetzelfde is
+    Random random = new Random(++seeder); //random getal genereren
 
     public TeerlingController(YahtzeeController controller ) //constructor
     {
@@ -45,12 +45,14 @@ namespace YathzeeTeerling
       }
     }
 
+    
     public void toggleVast()
     {
-      _model.Vast = !_model.Vast;
+       // Zeg tegen het model dat de teerling isVast waarde moet omgedraaid worden
+       _model.Vast = !_model.Vast;
     }
 
-    public void resetTeerling()
+    public void resetTeerling() // methode om teerling te resetten
     {
       _model.Aantalogen = 0;
       _model.Vast = false;

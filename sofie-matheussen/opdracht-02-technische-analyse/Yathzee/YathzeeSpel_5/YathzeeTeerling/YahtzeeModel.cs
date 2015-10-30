@@ -13,7 +13,7 @@ namespace YathzeeTeerling
     private int maxAantalWorpen = 3;  // max worpen --> opdracht
     private int aantalWorpen = 0;
 
-    public void addTeerling(TeerlingController teerling)
+    public void addTeerling(TeerlingController teerling) // methode om teerling toe te voegen
     {
       teerlingen.Add(teerling);
     }
@@ -41,6 +41,8 @@ namespace YathzeeTeerling
         return maxAantalWorpen;
       }
     }
+
+    //waarde voor aantal worpen ophalen
     public int AantalWorpen
     {
       get

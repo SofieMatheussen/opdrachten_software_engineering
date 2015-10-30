@@ -81,6 +81,7 @@ namespace YathzeeTeerling
         // update view teerlingen
         teerling.getView().updateUI();
       }
+            //changeScore();
     }
   }
 }
