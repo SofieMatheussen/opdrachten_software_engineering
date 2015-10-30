@@ -27,9 +27,10 @@ namespace YathzeeTeerling
       Controls.Add(yahtzeeView);
 
       //toevoegen scorebord
-      ScoreBoardController scorebord = new ScoreBoardController();
+      ScoreBoardController scorebord = new ScoreBoardController(yahtzee);
       ScoreBoardView scorebordView = scorebord.getView();
-      scorebordView.Location = new Point(0, 0);
-        }
+      scorebordView.Location = new Point(0, 170);
+      Controls.Add(scorebordView);
+      }
   }
 }

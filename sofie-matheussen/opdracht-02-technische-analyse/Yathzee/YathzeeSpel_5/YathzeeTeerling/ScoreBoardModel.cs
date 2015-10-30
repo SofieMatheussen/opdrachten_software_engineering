@@ -8,16 +8,20 @@ namespace YathzeeTeerling
 {
     public class ScoreBoardModel
     {
-        private List<TeerlingController> teerlingen = new List<TeerlingController>();
+        private List<TeerlingView> teerlingen = new List<TeerlingView>();
         private int aantalWorpen = 0;
         private int highscore = 0;
         private int score = 0;
 
-        public List<TeerlingController> Teerlingen
+        public List<TeerlingView> Teerlingen
         {
             get
             {
                 return teerlingen;
+            }
+            set
+            {
+                teerlingen =  value;
             }
         }
 
